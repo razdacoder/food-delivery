@@ -7,8 +7,10 @@
     <title>Home</title>
   </head>
   <body class="font-sans">
-    <header class="bg-green-500 border-b border-white">
-      <div class="container mx-auto p-4 flex justify-between items-center">
+    <header class="bg-green-500 border-b md:border-b-0 border-white">
+      <div
+        class="max-w-screen-xl mx-auto p-4 flex justify-between items-center"
+      >
         <a
           href="index.html"
           class="text-white text-2xl font-semibold italic flex items-center"
@@ -41,11 +43,11 @@
       </div>
     </header>
     <section
-      class="bg-green-500 w-full relative flex justify-center items-center py-10 before:absolute before:w-full before:bg-white before:left-0 before:bottom-[-50px] before:h-[88px] before:rounded-t-[43%]"
+      class="bg-green-500 h-[420px] w-full relative flex justify-center items-center py-10 pb-0 md:pb-10 before:absolute before:w-full before:bg-white before:left-0 before:bottom-[-50px] before:h-[88px] before:rounded-t-[43%]"
     >
       <div class="container mx-auto p-4">
-        <div class="flex flex-col gap-3 md:gap-12 md:w-2/4 mx-auto">
-          <div class="grid grid-cols-2 gap-4 md:grid-cols-4">
+        <div class="flex flex-col gap-3 md:gap-4 md:w-3/4 lg:w-2/6 mx-auto">
+          <div class="grid grid-cols-2 gap-8 md:grid-cols-4 mt-12 md:mt-0">
             <div
               class="flex flex-col gap-2 justify-center items-center col-span-1"
             >
@@ -121,7 +123,7 @@
           </div>
 
           <div
-            class="w-full rounded-full flex items-center bg-white px-2 gap-2 translate-y-8 border-b"
+            class="w-full rounded-full flex items-center bg-white px-2 gap-2 -translate-y-16 md:translate-y-20 lg:translate-y-20 border-b"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -147,5 +149,551 @@
         </div>
       </div>
     </section>
+    <section class="my-10">
+      <div class="max-w-screen-xl mx-auto p-4 space-y-4">
+        <h2 class="text-2xl font-semibold">Stores you might like</h2>
+        <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+          <div class="space-y-3">
+            <div
+              class="rounded-lg relative bg-[url('./assets/store1.png')] h-[122px] lg:h-[140px] bg-cover bg-center"
+            >
+              <span
+                class="text-white bg-black/70 px-1.5 rounded-full text-sm absolute bottom-2 left-2"
+                >Chicken</span
+              >
+            </div>
+            <div class="mt-3 px-2">
+              <h6 class="text-lg font-medium text-balance">Chicken Republic</h6>
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
+                  />
+                </svg>
+                <span class="text-sm font-medium">96%</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="rounded-lg relative bg-[url('./assets/store2.jpeg')] h-[122px] lg:h-[140px] bg-cover bg-center"
+            >
+              <span
+                class="text-white bg-black/70 px-1.5 rounded-full text-sm absolute bottom-2 left-2"
+                >Chicken</span
+              >
+              <div
+                class="absolute -top-2 right-2 bg-green-500 text-white text-sm font-medium px-2 py-1 rounded-lg"
+              >
+                -30%
+              </div>
+            </div>
+            <div class="mt-3 px-2">
+              <h6 class="text-lg font-medium text-balance">The Place</h6>
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
+                  />
+                </svg>
+                <span class="text-sm font-medium">96%</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="rounded-lg relative bg-[url('./assets/store1.png')] h-[122px] lg:h-[140px] bg-cover bg-center"
+            >
+              <span
+                class="text-white bg-black/70 px-1.5 rounded-full text-sm absolute bottom-2 left-2"
+                >Chicken</span
+              >
+            </div>
+            <div class="mt-3 px-2">
+              <h6 class="text-lg font-medium text-balance">Chicken Republic</h6>
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
+                  />
+                </svg>
+                <span class="text-sm font-medium">96%</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="rounded-lg relative bg-[url('./assets/store2.jpeg')] h-[122px] lg:h-[140px] bg-cover bg-center"
+            >
+              <span
+                class="text-white bg-black/70 px-1.5 rounded-full text-sm absolute bottom-2 left-2"
+                >Chicken</span
+              >
+              <div
+                class="absolute -top-2 right-2 bg-green-500 text-white text-sm font-medium px-2 py-1 rounded-lg"
+              >
+                -30%
+              </div>
+            </div>
+            <div class="mt-3 px-2">
+              <h6 class="text-lg font-medium text-balance">The Place</h6>
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
+                  />
+                </svg>
+                <span class="text-sm font-medium">96%</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="rounded-lg relative bg-[url('./assets/store1.png')] h-[122px] lg:h-[140px] bg-cover bg-center"
+            >
+              <span
+                class="text-white bg-black/70 px-1.5 rounded-full text-sm absolute bottom-2 left-2"
+                >Chicken</span
+              >
+            </div>
+            <div class="mt-3 px-2">
+              <h6 class="text-lg font-medium text-balance">Chicken Republic</h6>
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
+                  />
+                </svg>
+                <span class="text-sm font-medium">96%</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="rounded-lg relative bg-[url('./assets/store2.jpeg')] h-[122px] lg:h-[140px] bg-cover bg-center"
+            >
+              <span
+                class="text-white bg-black/70 px-1.5 rounded-full text-sm absolute bottom-2 left-2"
+                >Chicken</span
+              >
+              <div
+                class="absolute -top-2 right-2 bg-green-500 text-white text-sm font-medium px-2 py-1 rounded-lg"
+              >
+                -30%
+              </div>
+            </div>
+            <div class="mt-3 px-2">
+              <h6 class="text-lg font-medium text-balance">The Place</h6>
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
+                  />
+                </svg>
+                <span class="text-sm font-medium">96%</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="rounded-lg relative bg-[url('./assets/store1.png')] h-[122px] lg:h-[140px] bg-cover bg-center"
+            >
+              <span
+                class="text-white bg-black/70 px-1.5 rounded-full text-sm absolute bottom-2 left-2"
+                >Chicken</span
+              >
+            </div>
+            <div class="mt-3 px-2">
+              <h6 class="text-lg font-medium text-balance">Chicken Republic</h6>
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
+                  />
+                </svg>
+                <span class="text-sm font-medium">96%</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="rounded-lg relative bg-[url('./assets/store2.jpeg')] h-[122px] lg:h-[140px] bg-cover bg-center"
+            >
+              <span
+                class="text-white bg-black/70 px-1.5 rounded-full text-sm absolute bottom-2 left-2"
+                >Chicken</span
+              >
+              <div
+                class="absolute -top-2 right-2 bg-green-500 text-white text-sm font-medium px-2 py-1 rounded-lg"
+              >
+                -30%
+              </div>
+            </div>
+            <div class="mt-3 px-2">
+              <h6 class="text-lg font-medium text-balance">The Place</h6>
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
+                  />
+                </svg>
+                <span class="text-sm font-medium">96%</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="rounded-lg relative bg-[url('./assets/store1.png')] h-[122px] lg:h-[140px] bg-cover bg-center"
+            >
+              <span
+                class="text-white bg-black/70 px-1.5 rounded-full text-sm absolute bottom-2 left-2"
+                >Chicken</span
+              >
+            </div>
+            <div class="mt-3 px-2">
+              <h6 class="text-lg font-medium text-balance">Chicken Republic</h6>
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
+                  />
+                </svg>
+                <span class="text-sm font-medium">96%</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="rounded-lg relative bg-[url('./assets/store2.jpeg')] h-[122px] lg:h-[140px] bg-cover bg-center"
+            >
+              <span
+                class="text-white bg-black/70 px-1.5 rounded-full text-sm absolute bottom-2 left-2"
+                >Chicken</span
+              >
+              <div
+                class="absolute -top-2 right-2 bg-green-500 text-white text-sm font-medium px-2 py-1 rounded-lg"
+              >
+                -30%
+              </div>
+            </div>
+            <div class="mt-3 px-2">
+              <h6 class="text-lg font-medium text-balance">The Place</h6>
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
+                  />
+                </svg>
+                <span class="text-sm font-medium">96%</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="rounded-lg relative bg-[url('./assets/store1.png')] h-[122px] lg:h-[140px] bg-cover bg-center"
+            >
+              <span
+                class="text-white bg-black/70 px-1.5 rounded-full text-sm absolute bottom-2 left-2"
+                >Chicken</span
+              >
+            </div>
+            <div class="mt-3 px-2">
+              <h6 class="text-lg font-medium text-balance">Chicken Republic</h6>
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
+                  />
+                </svg>
+                <span class="text-sm font-medium">96%</span>
+              </div>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <div
+              class="rounded-lg relative bg-[url('./assets/store2.jpeg')] h-[122px] lg:h-[140px] bg-cover bg-center"
+            >
+              <span
+                class="text-white bg-black/70 px-1.5 rounded-full text-sm absolute bottom-2 left-2"
+                >Chicken</span
+              >
+              <div
+                class="absolute -top-2 right-2 bg-green-500 text-white text-sm font-medium px-2 py-1 rounded-lg"
+              >
+                -30%
+              </div>
+            </div>
+            <div class="mt-3 px-2">
+              <h6 class="text-lg font-medium text-balance">The Place</h6>
+              <div class="flex gap-3 items-center">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M6.633 10.25c.806 0 1.533-.446 2.031-1.08a9.041 9.041 0 0 1 2.861-2.4c.723-.384 1.35-.956 1.653-1.715a4.498 4.498 0 0 0 .322-1.672V2.75a.75.75 0 0 1 .75-.75 2.25 2.25 0 0 1 2.25 2.25c0 1.152-.26 2.243-.723 3.218-.266.558.107 1.282.725 1.282m0 0h3.126c1.026 0 1.945.694 2.054 1.715.045.422.068.85.068 1.285a11.95 11.95 0 0 1-2.649 7.521c-.388.482-.987.729-1.605.729H13.48c-.483 0-.964-.078-1.423-.23l-3.114-1.04a4.501 4.501 0 0 0-1.423-.23H5.904m10.598-9.75H14.25M5.904 18.5c.083.205.173.405.27.602.197.4-.078.898-.523.898h-.908c-.889 0-1.713-.518-1.972-1.368a12 12 0 0 1-.521-3.507c0-1.553.295-3.036.831-4.398C3.387 9.953 4.167 9.5 5 9.5h1.053c.472 0 .745.556.5.96a8.958 8.958 0 0 0-1.302 4.665c0 1.194.232 2.333.654 3.375Z"
+                  />
+                </svg>
+                <span class="text-sm font-medium">96%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="my-24">
+      <div class="max-w-screen-xl mx-auto p-4 space-y-4">
+        <div class="flex justify-center flex-col gap-4">
+          <img src="./src/assets/cities.svg" alt="" class="h-24" />
+          <h4 class="text-3xl font-semibold text-center">Top Categories</h4>
+        </div>
+        <div class="flex gap-3 flex-wrap justify-center">
+          <div
+            class="px-6 py-3 bg-green-500 transition text-white text-lg opacity-40 hover:opacity-100 cursor-pointer font-medium inline-block rounded-full"
+          >
+            Chicken
+          </div>
+          <div
+            class="px-6 py-3 bg-green-500 transition text-white text-lg opacity-40 hover:opacity-100 cursor-pointer font-medium inline-block rounded-full"
+          >
+            Pasta
+          </div>
+          <div
+            class="px-6 py-3 bg-green-500 transition text-white text-lg opacity-40 hover:opacity-100 cursor-pointer font-medium inline-block rounded-full"
+          >
+            Local Food
+          </div>
+          <div
+            class="px-6 py-3 bg-green-500 transition text-white text-lg opacity-40 hover:opacity-100 cursor-pointer font-medium inline-block rounded-full"
+          >
+            Sharwarma
+          </div>
+          <div
+            class="px-6 py-3 bg-green-500 transition text-white text-lg opacity-40 hover:opacity-100 cursor-pointer font-medium inline-block rounded-full"
+          >
+            Burgers
+          </div>
+          <div
+            class="px-6 py-3 bg-green-500 transition text-white text-lg opacity-40 hover:opacity-100 cursor-pointer font-medium inline-block rounded-full"
+          >
+            Traditional
+          </div>
+          <div
+            class="px-6 py-3 bg-green-500 transition text-white text-lg opacity-40 hover:opacity-100 cursor-pointer font-medium inline-block rounded-full"
+          >
+            Pizza
+          </div>
+          <div
+            class="px-6 py-3 bg-green-500 transition text-white text-lg opacity-40 hover:opacity-100 cursor-pointer font-medium inline-block rounded-full"
+          >
+            Healthy
+          </div>
+          <div
+            class="px-6 py-3 bg-green-500 transition text-white text-lg opacity-40 hover:opacity-100 cursor-pointer font-medium inline-block rounded-full"
+          >
+            Jollof
+          </div>
+          <div
+            class="px-6 py-3 bg-green-500 transition text-white text-lg opacity-40 hover:opacity-100 cursor-pointer font-medium inline-block rounded-full"
+          >
+            Snacks
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer class="bg-slate-900 mt-24 text-white">
+      <div class="max-w-screen-xl mx-auto p-4 py-24">
+        <a
+          href="index.html"
+          class="text-white text-2xl font-semibold italic flex items-center justify-center md:justify-start lg:ml-5"
+          >Glovo
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 -translate-y-2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+            />
+          </svg>
+        </a>
+        <div class="mt-6 grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="space-y-3">
+            <h5 class="text-xl lg:text-2xl font-semibold text-center">
+              Let's do it together
+            </h5>
+            <div
+              class="flex flex-col gap-2 items-center text-sm font-medium text-slate-300"
+            >
+              <a href="#">Careers</a>
+              <a href="#">Glovo for Partners</a>
+              <a href="#">Couriers</a>
+              <a href="#">Glovo Business</a>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <h5 class="text-xl lg:text-2xl font-semibold text-center">
+              Links of interest
+            </h5>
+            <div
+              class="flex flex-col gap-2 items-center text-sm font-medium text-slate-300"
+            >
+              <a href="#">About us</a>
+              <a href="#">FAQ</a>
+              <a href="#">Blog</a>
+              <a href="#">Contact us</a>
+              <a href="#">Security</a>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <h5 class="text-xl lg:text-2xl font-semibold text-center">
+              Follow us
+            </h5>
+            <div
+              class="flex flex-col gap-2 items-center text-sm font-medium text-slate-300"
+            >
+              <a href="#">Facebook</a>
+              <a href="#">Twitter</a>
+              <a href="#">Instagram</a>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <h5 class="text-xl lg:text-2xl font-semibold text-center">
+              Polices
+            </h5>
+            <div
+              class="flex flex-col gap-2 items-center text-sm font-medium text-slate-300"
+            >
+              <a href="#">Terms & Conditions</a>
+              <a href="#">Privacy Policy</a>
+              <a href="#">Cookie Policy</a>
+              <a href="#">Compliance</a>
+            </div>
+          </div>
+        </div>
+        <p class="mt-6 text-center text-slate-300 font-medium text-sm">
+          &copy; Copyright, All rights reserved, Glovo
+          <script>
+            document.write(new Date().getFullYear());
+          </script>
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
