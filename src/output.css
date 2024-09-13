@@ -754,6 +754,10 @@ video {
   width: 100%;
 }
 
+.w-1\/2{
+  width: 50%;
+}
+
 .max-w-screen-lg{
   max-width: 1024px;
 }
