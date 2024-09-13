@@ -183,7 +183,7 @@
     </header>
 
     <main id="content">
-      <section class="bg-primary py-12 lg:py-16">
+      <section class="bg-primary py-24 clip-header">
         <div
           class="max-w-screen-lg mx-auto p-4 flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-16"
         >
@@ -294,7 +294,7 @@
         </div>
       </section>
 
-      <section class="py-10 md:py-24">
+      <section class="py-24">
         <div class="max-w-screen-lg mx-auto space-y-8 md:p-8">
           <h2
             class="text-3xl md:text-4xl font-bold text-center px-4 md:px-0 block"
@@ -404,8 +404,8 @@
         </div>
       </section>
 
-      <section class="py-10 md:py-24">
-        <div class="max-w-screen-lg mx-auto space-y-8 p-4 lg:p-0">
+      <section class="py-32 bg-primary clip-reverse">
+        <div class="max-w-screen-lg mx-auto space-y-8 p-4 lg:p-0 mt-10">
           <h2
             class="hidden text-3xl md:text-4xl font-bold text-center px-4 md:px-0 md:block"
           >
@@ -1136,7 +1136,11 @@
         <div class="max-w-screen-lg mx-auto p-4 space-y-8">
           <div class="flex justify-center flex-col gap-4">
             <img src="./src/assets/cities.svg" alt="" class="h-24" />
-            <h4 class="text-3xl font-semibold text-center">Top Categories</h4>
+            <h2
+              class="text-3xl md:text-4xl font-bold text-center px-4 md:px-0 block"
+            >
+              Top Categories
+            </h2>
           </div>
           <div class="flex gap-1.5 md:gap-3 flex-wrap justify-center">
             <div
@@ -1188,6 +1192,76 @@
               class="px-6 py-3 bg-primary/10 transition text-lg hover:bg-primary cursor-pointer font-medium inline-block rounded-full"
             >
               Snacks
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-32 bg-secondary/30 clip-reverse">
+        <div class="max-w-screen-lg mx-auto p-4 space-y-8 my-10">
+          <div class="flex justify-center flex-col gap-4">
+            <h2
+              class="text-3xl md:text-4xl font-bold text-center px-4 md:px-0 block"
+            >
+              Let's do it together
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="space-y-4">
+                <div class="flex justify-center">
+                  <img src="/src/assets/rider-image-opt.png" alt="" />
+                </div>
+                <div class="text-center space-y-3">
+                  <h5 class="text-2xl font-semibold">Become a rider</h5>
+                  <p class="text-sm font-medium">
+                    Enjoy flexibility, freedom and competitive earnings by
+                    delivering through Glovo.<br /><br />
+                  </p>
+                  <button
+                    class="bg-secondary px-12 py-3 rounded-full shadow font-medium text-white tracking-wide"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
+
+              <div class="space-y-4">
+                <div class="flex justify-center">
+                  <img src="/src/assets/partners-image-opt.png" alt="" />
+                </div>
+                <div class="text-center space-y-3">
+                  <h5 class="text-2xl font-semibold">Become a partner</h5>
+                  <p class="text-sm font-medium">
+                    Grow with Glovo! Our technology and user base can help you
+                    boost sales and unlock new opportunities!
+                  </p>
+                  <button
+                    class="bg-secondary px-12 py-3 rounded-full shadow font-medium text-white tracking-wide"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="space-y-4 md:col-span-2 lg:col-span-1 md:w-1/2 lg:w-full mx-auto"
+              >
+                <div class="flex justify-center">
+                  <img src="/src/assets/careers-image-opt.png" alt="" />
+                </div>
+                <div class="text-center space-y-3">
+                  <h5 class="text-2xl font-semibold">Careers</h5>
+                  <p class="text-sm font-medium">
+                    Ready for an exciting new challenge? If you're ambitious,
+                    humble, and love working with others, then we want to hear
+                    from you!
+                  </p>
+                  <button
+                    class="bg-secondary px-12 py-3 rounded-full shadow font-medium text-white tracking-wide"
+                  >
+                    Register
+                  </button>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -1399,7 +1473,7 @@
       </section>
     </main>
 
-    <footer class="bg-slate-900 mt-24 text-white">
+    <footer class="bg-slate-900 mt-24 text-white clip-footer">
       <div
         class="max-w-screen-xl mx-auto p-4 py-24 flex flex-col-reverse lg:flex-row"
       >

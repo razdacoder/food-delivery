@@ -2,3 +2,17 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer utilities {
+  .clip-header {
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 0% 100%);
+  }
+
+  .clip-reverse {
+    clip-path: polygon(0 20%, 100% 0, 100% 80%, 0 100%);
+  }
+
+  .clip-footer {
+    clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
+  }
+}
