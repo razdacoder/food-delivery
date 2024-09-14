@@ -1395,7 +1395,7 @@ video {
 .hero-banner {
   background-image: linear-gradient(
         rgba(239, 94, 18, 0.8),
-        rgba(239, 94, 18, 0.7)
+        rgba(239, 94, 18, 0.8)
       ),
       url("/src/assets/hero-banner.jpg");
 }
