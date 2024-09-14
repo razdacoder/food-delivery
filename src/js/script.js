@@ -1,9 +1,9 @@
 $(document).ready(function () {
   var $navbar = $("#sticky-nav");
-  var $content = $("#content");
+  var $content = $("#hero");
 
   // Get the position of the content section
-  var contentOffsetTop = $content.offset().top;
+  var contentOffsetTop = $content.offset().bottom;
 
   // Check scroll event
   $(window).scroll(function () {

@@ -15,4 +15,12 @@
   .clip-footer {
     clip-path: polygon(0 0, 100% 20%, 100% 100%, 0 100%);
   }
+
+  .hero-banner {
+    background-image: linear-gradient(
+        rgba(239, 94, 18, 0.8),
+        rgba(239, 94, 18, 0.7)
+      ),
+      url("/src/assets/hero-banner.jpg");
+  }
 }

@@ -14,9 +14,11 @@
     <title>Home</title>
   </head>
   <body class="font-sans">
-    <header class="bg-primary border-b lg:border-b-0 border-white">
+    <header
+      class="hero-banner bg-cover bg-ce clip-header h-[75vh] flex flex-col border-b lg:border-b-0 border-white"
+    >
       <div
-        class="max-w-screen-xl mx-auto p-4 flex justify-between items-center"
+        class="max-w-screen-xl mx-auto p-4 flex justify-between w-full items-center"
       >
         <a
           href="index.html"
@@ -43,7 +45,7 @@
           </svg>
         </a>
         <button
-          class="py-2 px-6 bg-secondary border-none text-white text-sm font-medium rounded-full"
+          class="py-2 px-6 bg-white border-none text-primary text-sm font-medium rounded-full"
         >
           Login
         </button>
@@ -56,7 +58,7 @@
           <div class="flex justify-between items-center">
             <a
               href="index.html"
-              class="text-secondary text-2xl font-semibold italic flex items-center"
+              class="text-primary text-2xl font-semibold italic flex items-center"
               >Glovo
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -103,10 +105,10 @@
               <input
                 type="text"
                 placeholder="What your address?"
-                class="flex-1 text-sm font-medium py-3 focus:outline-none"
+                class="flex-1 text-sm font-medium text-black py-3 focus:outline-none"
               />
               <button
-                class="hidden md:flex items-center gap-2 bg-secondary/30 text-secondary px-3 py-2 rounded-md text-sm font-medium"
+                class="hidden md:flex items-center gap-2 bg-primary text-white px-3 py-2 rounded-md text-sm font-medium"
               >
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
@@ -126,7 +128,7 @@
               </button>
             </div>
             <button
-              class="py-2 px-6 bg-secondary border-none text-white text-sm font-medium rounded-full"
+              class="py-2 px-6 bg-primary border-none text-white text-sm font-medium rounded-full"
             >
               Login
             </button>
@@ -156,10 +158,10 @@
             <input
               type="text"
               placeholder="What your address?"
-              class="flex-1 text-sm font-medium py-3 focus:outline-none"
+              class="flex-1 text-sm font-medium text-black py-3 focus:outline-none"
             />
             <button
-              class="hidden md:flex items-center gap-2 bg-secondary/30 text-secondary px-3 py-2 rounded-md text-sm font-medium"
+              class="hidden md:flex items-center gap-2 bg-primary text-white px-3 py-2 rounded-md text-sm font-medium"
             >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -180,23 +182,12 @@
           </div>
         </div>
       </div>
-    </header>
 
-    <main id="content">
-      <section class="bg-primary py-24 clip-header">
+      <section id="hero" class="flex-1 flex justify-center items-center">
         <div
           class="max-w-screen-lg mx-auto p-4 flex flex-col lg:flex-row items-center justify-center gap-4 lg:gap-16"
         >
-          <!-- <div>
-            <video
-              src="/src/assets/banner.webm"
-              loop
-              autoplay
-              class="h-56 lg:h-auto"
-            ></video>
-          </div> -->
-
-          <div class="space-y-2 lg:space-y-8 text-center">
+          <div class="space-y-2 lg:space-y-8 text-center text-white">
             <h1 class="text-3xl lg:text-5xl font-bold">
               Food order, delivery and more
             </h1>
@@ -214,7 +205,7 @@
                   viewBox="0 0 24 24"
                   stroke-width="1.5"
                   stroke="currentColor"
-                  class="size-6"
+                  class="size-6 text-gray-500"
                 >
                   <path
                     stroke-linecap="round"
@@ -230,10 +221,10 @@
                 <input
                   type="text"
                   placeholder="What your address?"
-                  class="flex-1 text-sm font-medium py-3 focus:outline-none"
+                  class="flex-1 text-sm font-medium text-black py-3 focus:outline-none"
                 />
                 <button
-                  class="hidden md:flex items-center gap-2 bg-secondary/30 text-secondary px-3 py-2 rounded-md text-sm font-medium"
+                  class="hidden md:flex items-center gap-2 bg-primary text-white px-3 py-2 rounded-md text-sm font-medium"
                 >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -293,7 +284,9 @@
           </div>
         </div>
       </section>
+    </header>
 
+    <main id="content">
       <section class="py-24">
         <div class="max-w-screen-lg mx-auto space-y-8 md:p-8">
           <h2
@@ -302,7 +295,7 @@
             Top restaurants and more in Glovo
           </h2>
           <div
-            class="flex items-center overflow-auto py-3 md:grid grid-cols-4 gap-x-4 gap-y-0 md:gap-x-8 md:gap-y-16"
+            class="flex items-center text-white overflow-auto py-3 md:grid grid-cols-4 gap-x-4 gap-y-0 md:gap-x-8 md:gap-y-16"
           >
             <div
               class="flex flex-col gap-2 justify-center items-center col-span-1 relative"
@@ -407,13 +400,13 @@
       <section class="py-32 bg-primary clip-reverse">
         <div class="max-w-screen-lg mx-auto space-y-8 p-4 lg:p-0 mt-10">
           <h2
-            class="hidden text-3xl md:text-4xl font-bold text-center px-4 md:px-0 md:block"
+            class="hidden text-white text-3xl md:text-4xl font-bold text-center px-4 md:px-0 md:block"
           >
             Anything delivered
           </h2>
 
           <div
-            class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
+            class="grid grid-cols-1 text-white md:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8"
           >
             <div class="flex items-center gap-3 flex-col">
               <div>
@@ -434,11 +427,11 @@
                 </p>
               </div>
               <div class="flex md:hidden justify-center items-center mt-6">
-                <button
-                  class="px-6 py-3 rounded-full text-white font-semibold bg-secondary"
+                <a
+                  class="px-6 py-3 rounded-full text-primary font-semibold bg-white"
                 >
                   Explore stores around you
-                </button>
+                </a>
               </div>
             </div>
             <div class="flex items-center gap-3 flex-col">
@@ -479,7 +472,7 @@
 
           <div class="hidden md:flex justify-center items-center mt-6">
             <button
-              class="px-6 py-3 rounded-full text-white font-semibold bg-secondary"
+              class="px-6 py-3 rounded-full text-primary font-semibold bg-white"
             >
               Explore stores around you
             </button>
@@ -1197,7 +1190,7 @@
         </div>
       </section>
 
-      <section class="py-32 bg-secondary/30 clip-reverse">
+      <section class="py-32 bg-primary/30 clip-reverse">
         <div class="max-w-screen-lg mx-auto p-4 space-y-8 my-10">
           <div class="flex justify-center flex-col gap-4">
             <h2
@@ -1218,7 +1211,7 @@
                   </p>
                   <a
                     href="riders.html"
-                    class="bg-secondary inline-block px-12 py-3 rounded-full shadow font-medium text-white tracking-wide"
+                    class="bg-primary inline-block px-12 py-3 rounded-full shadow font-medium text-white tracking-wide"
                   >
                     Register
                   </a>
@@ -1237,7 +1230,7 @@
                   </p>
                   <a
                     href="partners.html"
-                    class="bg-secondary inline-block px-12 py-3 rounded-full shadow font-medium text-white tracking-wide"
+                    class="bg-primary inline-block px-12 py-3 rounded-full shadow font-medium text-white tracking-wide"
                   >
                     Register
                   </a>
@@ -1258,7 +1251,7 @@
                     from you!
                   </p>
                   <button
-                    class="bg-secondary px-12 py-3 rounded-full shadow font-medium text-white tracking-wide"
+                    class="bg-primary px-12 py-3 rounded-full shadow font-medium text-white tracking-wide"
                   >
                     Register
                   </button>
@@ -1277,7 +1270,7 @@
             Cities near me
           </h2>
           <div class="mt-8">
-            <a href="#" class="text-lg font-semibold underline text-secondary"
+            <a href="#" class="text-lg font-semibold underline text-primary"
               >Ibadan</a
             >
             <div class="mt-4">
@@ -1285,28 +1278,28 @@
               <div
                 class="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 mt-2 gap-4 text-sm"
               >
-                <a href="#" class="font-medium text-secondary">Agbowo</a>
-                <a href="#" class="font-medium text-secondary">Akobo</a>
-                <a href="#" class="font-medium text-secondary">Ashi</a>
-                <a href="#" class="font-medium text-secondary">Bashorun</a>
-                <a href="#" class="font-medium text-secondary">Bodija</a>
-                <a href="#" class="font-medium text-secondary">Mokola</a>
-                <a href="#" class="font-medium text-secondary">Ojoo</a>
-                <a href="#" class="font-medium text-secondary">Orogun</a>
-                <a href="#" class="font-medium text-secondary">Barika</a>
-                <a href="#" class="font-medium text-secondary">Samonda</a>
-                <a href="#" class="font-medium text-secondary">Sango</a>
-                <a href="#" class="font-medium text-secondary">Eleyele</a>
-                <a href="#" class="font-medium text-secondary">Ologuneru</a>
-                <a href="#" class="font-medium text-secondary">Monita</a>
-                <a href="#" class="font-medium text-secondary">Agodi</a>
-                <a href="#" class="font-medium text-secondary">Agodi -Gate</a>
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary">Agbowo</a>
+                <a href="#" class="font-medium text-primary">Akobo</a>
+                <a href="#" class="font-medium text-primary">Ashi</a>
+                <a href="#" class="font-medium text-primary">Bashorun</a>
+                <a href="#" class="font-medium text-primary">Bodija</a>
+                <a href="#" class="font-medium text-primary">Mokola</a>
+                <a href="#" class="font-medium text-primary">Ojoo</a>
+                <a href="#" class="font-medium text-primary">Orogun</a>
+                <a href="#" class="font-medium text-primary">Barika</a>
+                <a href="#" class="font-medium text-primary">Samonda</a>
+                <a href="#" class="font-medium text-primary">Sango</a>
+                <a href="#" class="font-medium text-primary">Eleyele</a>
+                <a href="#" class="font-medium text-primary">Ologuneru</a>
+                <a href="#" class="font-medium text-primary">Monita</a>
+                <a href="#" class="font-medium text-primary">Agodi</a>
+                <a href="#" class="font-medium text-primary">Agodi -Gate</a>
+                <a href="#" class="font-medium text-primary"
                   >Univerdity of Ibadan</a
                 >
-                <a href="#" class="font-medium text-secondary">UCH</a>
-                <a href="#" class="font-medium text-secondary">Dugbe</a>
-                <a href="#" class="font-medium text-secondary">Onireke</a>
+                <a href="#" class="font-medium text-primary">UCH</a>
+                <a href="#" class="font-medium text-primary">Dugbe</a>
+                <a href="#" class="font-medium text-primary">Onireke</a>
               </div>
             </div>
             <div class="mt-4">
@@ -1314,71 +1307,71 @@
               <div
                 class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-2 gap-4 text-sm"
               >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Agbowo</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Akobo</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Ashi</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Bashorun</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Bodija</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Mokola</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Ojoo</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Orogun</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Barika</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Samonda</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Sango</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Eleyele</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Ologuneru</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Monita</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Agodi</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Agodi -Gate</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Univerdity of Ibadan</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in UCH</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Dugbe</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restaurants in Onireke</a
                 >
               </div>
             </div>
           </div>
           <div class="mt-8">
-            <a href="#" class="text-lg font-semibold underline text-secondary"
+            <a href="#" class="text-lg font-semibold underline text-primary"
               >Abuja</a
             >
             <div class="mt-4">
@@ -1386,16 +1379,16 @@
               <div
                 class="grid grid-cols-2 md:grid-cols-5 lg:grid-cols-6 mt-2 gap-4 text-sm"
               >
-                <a href="#" class="font-medium text-secondary">Wuse</a>
-                <a href="#" class="font-medium text-secondary">Adetokunbo</a>
-                <a href="#" class="font-medium text-secondary">
+                <a href="#" class="font-medium text-primary">Wuse</a>
+                <a href="#" class="font-medium text-primary">Adetokunbo</a>
+                <a href="#" class="font-medium text-primary">
                   Aminu Kano Crescent</a
                 >
-                <a href="#" class="font-medium text-secondary">Garki</a>
-                <a href="#" class="font-medium text-secondary">Gwarinpa</a>
-                <a href="#" class="font-medium text-secondary"> Wuye</a>
-                <a href="#" class="font-medium text-secondary">Utako</a>
-                <a href="#" class="font-medium text-secondary">Area 11</a>
+                <a href="#" class="font-medium text-primary">Garki</a>
+                <a href="#" class="font-medium text-primary">Gwarinpa</a>
+                <a href="#" class="font-medium text-primary"> Wuye</a>
+                <a href="#" class="font-medium text-primary">Utako</a>
+                <a href="#" class="font-medium text-primary">Area 11</a>
               </div>
             </div>
             <div class="mt-4">
@@ -1403,35 +1396,35 @@
               <div
                 class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-2 gap-4 text-sm"
               >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restuarants in Wuse</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restuarants in Adetokunbo</a
                 >
-                <a href="#" class="font-medium text-secondary">
+                <a href="#" class="font-medium text-primary">
                   Restuarants in Aminu Kano Crescent</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restuarants in Garki</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restuarants in Gwarinpa</a
                 >
-                <a href="#" class="font-medium text-secondary">
+                <a href="#" class="font-medium text-primary">
                   Restuarants in Wuye</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restuarants in Utako</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restuarants in Area 11</a
                 >
               </div>
             </div>
           </div>
           <div class="mt-8">
-            <a href="#" class="text-lg font-semibold underline text-secondary"
+            <a href="#" class="text-lg font-semibold underline text-primary"
               >Lagos</a
             >
             <div class="mt-4">
@@ -1439,13 +1432,13 @@
               <div
                 class="grid grid-cols-2 md:grid-col-5 lg:grid-cols-6 mt-2 gap-4 text-sm"
               >
-                <a href="#" class="font-medium text-secondary">Lekki</a>
-                <a href="#" class="font-medium text-secondary">Ikeja</a>
-                <a href="#" class="font-medium text-secondary">
+                <a href="#" class="font-medium text-primary">Lekki</a>
+                <a href="#" class="font-medium text-primary">Ikeja</a>
+                <a href="#" class="font-medium text-primary">
                   Victoria Island</a
                 >
-                <a href="#" class="font-medium text-secondary">Ikoyi</a>
-                <a href="#" class="font-medium text-secondary">Oniru</a>
+                <a href="#" class="font-medium text-primary">Ikoyi</a>
+                <a href="#" class="font-medium text-primary">Oniru</a>
               </div>
             </div>
             <div class="mt-4">
@@ -1453,19 +1446,19 @@
               <div
                 class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-2 gap-4 text-sm"
               >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restuarants in Lekki</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restuarants in Ikeja</a
                 >
-                <a href="#" class="font-medium text-secondary">
+                <a href="#" class="font-medium text-primary">
                   Restuarants in Victoria Island</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restuarants in Ikoyi</a
                 >
-                <a href="#" class="font-medium text-secondary"
+                <a href="#" class="font-medium text-primary"
                   >Restuarants in Oniru</a
                 >
               </div>
