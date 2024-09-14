@@ -1,6 +1,6 @@
 $(document).ready(function () {
   var $navbar = $("#sticky-nav");
-  var $content = $("#hero");
+  var $content = $("#content");
 
   // Get the position of the content section
   var contentOffsetTop = $content.offset().top;
