@@ -4,8 +4,9 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: "#eab308",
-        secondary: "#0d9488",
+        primary: "#ef5e12",
+        secondary: "#32CD32",
+        // dark: "#ef5e12",
       },
       fontFamily: {
         sans: ["Montserrat", "sans-serif"],

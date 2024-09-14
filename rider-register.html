@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./src/output.css" rel="stylesheet" />
+    <link
+      rel="shortcut icon"
+      href="/src/assets/favicon.ico"
+      type="image/x-icon"
+    />
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <title>Home</title>
+  </head>
+  <body class="font-sans">
+    <header class="mx-auto p-4 bg-slate-900">
+      <div class="max-w-screen-2xl mx-auto flex justify-between items-center">
+        <a
+          href="index.html"
+          class="text-white text-2xl font-semibold flex items-center justify-center lg:justify-start"
+          >Glovo
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6 -translate-y-2 text-primary"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+            />
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+            />
+          </svg>
+        </a>
+        <div class="hidden text-white md:flex items-center gap-8">
+          <a
+            href="#"
+            class="text-sm font-semibold border-b-2 border-primary py-0.5"
+            >Become a courier</a
+          >
+          <a href="#" class="text-sm font-semibold py-0.5">Help center</a>
+          <img src="/src/assets/ng.png" alt="" class="size-10" />
+        </div>
+        <button class="md:hidden text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+            />
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main id="content">
+      <section class="">
+        <div
+          class="bg-[linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url('./assets/hero-image.png')] py-10 md:py-24 bg-cover bg-center h-[40vh] md:h-[60vh]"
+        >
+          <div class="max-w-screen-sm lg:max-w-screen-lg mx-auto">
+            <h1
+              class="text-balance text-2xl text-center md:text-left md:text-6xl lg:text-7xl font-bold text-white"
+            >
+              Become a delivery driver and make money
+            </h1>
+          </div>
+        </div>
+        <div class="bg-slate-900 py-24">
+          <div
+            class="max-w-screen-sm lg:max-w-screen-lg mx-auto flex gap-16 p-4"
+          >
+            <form
+              action=""
+              class="bg-white drop-shadow-sm w-full lg:w-1/2 rounded-lg -mt-64 md:-mt-96"
+            >
+              <div class="bg-secondary/20 p-8">
+                <h3 class="text-lg md:text-3xl font-semibold">
+                  Fill out the form to start delivering
+                </h3>
+              </div>
+              <div class="p-8 bg-gray-100 space-y-8">
+                <div>
+                  <h5 class="font-semibold">About you</h5>
+                  <div class="mt-6 space-y-6">
+                    <div class="space-y-1">
+                      <label for="name" class="text-sm font-medium"
+                        >Name*</label
+                      >
+                      <div
+                        class="flex items-center gap-3 border-2 border-slate-400 px-3 py-2 bg-white"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6 stroke-gray-500"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z"
+                          />
+                        </svg>
+
+                        <input
+                          type="text"
+                          id="name"
+                          class="flex-1 focus:outline-none font-medium text-sm"
+                          placeholder="John Doe"
+                        />
+                      </div>
+                    </div>
+                    <div class="space-y-1">
+                      <label for="email" class="text-sm font-medium"
+                        >Email*</label
+                      >
+                      <div
+                        class="flex items-center gap-3 border-2 border-slate-400 px-3 py-2 bg-white"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6 stroke-gray-500"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M21.75 6.75v10.5a2.25 2.25 0 0 1-2.25 2.25h-15a2.25 2.25 0 0 1-2.25-2.25V6.75m19.5 0A2.25 2.25 0 0 0 19.5 4.5h-15a2.25 2.25 0 0 0-2.25 2.25m19.5 0v.243a2.25 2.25 0 0 1-1.07 1.916l-7.5 4.615a2.25 2.25 0 0 1-2.36 0L3.32 8.91a2.25 2.25 0 0 1-1.07-1.916V6.75"
+                          />
+                        </svg>
+
+                        <input
+                          type="email"
+                          id="email"
+                          class="flex-1 focus:outline-none font-medium text-sm"
+                          placeholder="john.doe@email.com"
+                        />
+                      </div>
+                      <p class="text-xs font-medium">
+                        This e-mail will be used to create your courier account
+                      </p>
+                    </div>
+                    <div class="space-y-1">
+                      <label for="tel" class="text-sm font-medium"
+                        >Phone*</label
+                      >
+                      <div
+                        class="flex items-center gap-3 border-2 border-slate-400 px-3 py-2 bg-white"
+                      >
+                        <select
+                          name="phone"
+                          id="phone"
+                          class="bg-white focus:outline-none text-sm font-medium py-1"
+                        >
+                          <option value="NGN">
+                            <img src="/src/assets/ng.png" /> +234
+                          </option>
+                        </select>
+                        <input
+                          type="tel"
+                          id="tel"
+                          class="flex-1 focus:outline-none font-medium text-sm"
+                          placeholder="0802 123 4567"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <h5 class="font-semibold">Where and how will you deliver?</h5>
+                  <div class="mt-6 space-y-6">
+                    <div class="space-y-1">
+                      <label for="name" class="text-sm font-medium"
+                        >City*</label
+                      >
+                      <div
+                        class="flex items-center gap-3 border-2 border-slate-400 px-3 py-2 bg-white"
+                      >
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          viewBox="0 0 24 24"
+                          stroke-width="1.5"
+                          stroke="currentColor"
+                          class="size-6 stroke-gray-500"
+                        >
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+                          />
+                          <path
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                            d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+                          />
+                        </svg>
+
+                        <select
+                          type="text"
+                          id="name"
+                          class="flex-1 focus:outline-none bg-white py-1 font-medium text-sm"
+                          placeholder="City"
+                        >
+                          <option value="Lekki">Lekki</option>
+                          <option value="Lekki">Lekki</option>
+                          <option value="Lekki">Lekki</option>
+                          <option value="Lekki">Lekki</option>
+                        </select>
+                      </div>
+                    </div>
+                    <div class="space-y-1">
+                      <label for="" class="text-sm font-medium">Vehicle*</label>
+                      <div class="grid grid-cols-3 gap-4">
+                        <div
+                          class="has-[:checked]:border-secondary border-2 border-gray-400 rounded-md bg-white flex justify-center items-center"
+                        >
+                          <label for="motorbike">
+                            <img src="/src/assets/motorbike.svg" alt="" />
+                          </label>
+                          <input
+                            type="radio"
+                            name="vehicle"
+                            class="hidden"
+                            id="motorbike"
+                          />
+                        </div>
+                        <div
+                          class="has-[:checked]:border-secondary border-2 border-gray-400 rounded-md bg-white flex justify-center items-center"
+                        >
+                          <label for="bicycle">
+                            <img src="/src/assets/bicycle.svg" alt="" />
+                          </label>
+                          <input
+                            type="radio"
+                            name="vehicle"
+                            class="hidden"
+                            id="bicycle"
+                          />
+                        </div>
+                        <div
+                          class="has-[:checked]:border-secondary border-2 border-gray-400 rounded-md bg-white flex justify-center items-center"
+                        >
+                          <label for="walker">
+                            <img src="/src/assets/walker.svg" alt="" />
+                          </label>
+                          <input
+                            type="radio"
+                            name="vehicle"
+                            class="hidden"
+                            id="walker"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <button
+                  class="w-full py-3 font-medium bg-secondary text-white rounded-full"
+                >
+                  Sign up
+                </button>
+              </div>
+            </form>
+            <div class="hidden lg:block w-1/2 text-white space-y-2">
+              <h2 class="text-6xl font-bold">Hello</h2>
+              <p class="text-lg font-medium">
+                Do you want to set your own schedule and connect when it suits
+                you? Get paid for delivering orders with the Glovo Courier App.
+              </p>
+              <h5 class="text-2xl font-semibold">Sign up today!</h5>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="py-24">
+        <div class="max-w-screen-sm lg:max-w-screen-lg mx-auto p-4">
+          <h2 class="text-2xl font-semibold text-center tracking-tight">
+            Frequently asked qestions
+          </h2>
+
+          <div class="mt-10 space-y-6">
+            <div class="accordion-item">
+              <div
+                class="accordion-trigger flex justify-between gap-16 items-center border-b-2 border-gray-500 py-4"
+              >
+                <h4 class="text-lg font-semibold tracking-tighter">
+                  What do you need to start delivering using Glovo?
+                </h4>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-content hidden p-2 border-b-2 border-gray-500"
+              >
+                <p class="text-sm font-medium">
+                  You need to be at least 18 years old, hold a valid work permit
+                  and have a smartphone (iOS or Android) to start delivering. No
+                  delivery experience needed!<br /><br />
+                  Other compulsory permits and insurances may be needed
+                  depending on whether you want to deliver by car, scooter,
+                  bicycle, or by foot.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div
+                class="accordion-trigger flex justify-between gap-16 items-center border-b-2 border-gray-500 py-4"
+              >
+                <h4 class="text-lg font-semibold tracking-tighter">
+                  What do you need to start delivering using Glovo?
+                </h4>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-content hidden p-2 border-b-2 border-gray-500"
+              >
+                <p class="text-sm font-medium">
+                  You need to be at least 18 years old, hold a valid work permit
+                  and have a smartphone (iOS or Android) to start delivering. No
+                  delivery experience needed!<br /><br />
+                  Other compulsory permits and insurances may be needed
+                  depending on whether you want to deliver by car, scooter,
+                  bicycle, or by foot.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div
+                class="accordion-trigger flex justify-between gap-16 items-center border-b-2 border-gray-500 py-4"
+              >
+                <h4 class="text-lg font-semibold tracking-tighter">
+                  What do you need to start delivering using Glovo?
+                </h4>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-content hidden p-2 border-b-2 border-gray-500"
+              >
+                <p class="text-sm font-medium">
+                  You need to be at least 18 years old, hold a valid work permit
+                  and have a smartphone (iOS or Android) to start delivering. No
+                  delivery experience needed!<br /><br />
+                  Other compulsory permits and insurances may be needed
+                  depending on whether you want to deliver by car, scooter,
+                  bicycle, or by foot.
+                </p>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <div
+                class="accordion-trigger flex justify-between gap-16 items-center border-b-2 border-gray-500 py-4"
+              >
+                <h4 class="text-lg font-semibold tracking-tighter">
+                  What do you need to start delivering using Glovo?
+                </h4>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-6"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                  />
+                </svg>
+              </div>
+              <div
+                class="accordion-content hidden p-2 border-b-2 border-gray-500"
+              >
+                <p class="text-sm font-medium">
+                  You need to be at least 18 years old, hold a valid work permit
+                  and have a smartphone (iOS or Android) to start delivering. No
+                  delivery experience needed!<br /><br />
+                  Other compulsory permits and insurances may be needed
+                  depending on whether you want to deliver by car, scooter,
+                  bicycle, or by foot.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-slate-900 mt-24 text-white">
+      <div
+        class="max-w-screen-sm lg:max-w-screen-xl mx-auto p-4 py-24 flex flex-col-reverse lg:flex-row"
+      >
+        <div class="w-full lg:w-2/6 md:mt-8 lg:mt-0">
+          <a
+            href="index.html"
+            class="text-white text-2xl font-semibold italic flex items-center justify-center lg:justify-start"
+            >Glovo
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="size-6 -translate-y-2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M15 10.5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"
+              />
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M19.5 10.5c0 7.142-7.5 11.25-7.5 11.25S4.5 17.642 4.5 10.5a7.5 7.5 0 1 1 15 0Z"
+              />
+            </svg>
+          </a>
+          <div
+            class="lg:mt-24 text-slate-400 text-center lg:text-left text-sm font-medium"
+          >
+            <p>&copy; Glovo by Software Inc.</p>
+            <a href="#">Terms of service</a> | <a href="#">Privacy Policy</a>
+          </div>
+        </div>
+
+        <div class="w-full lg:w-4/6 grid grid-cols-1 md:grid-cols-4 gap-8">
+          <div class="space-y-3">
+            <h5 class="font-semibold">Products</h5>
+            <div class="flex flex-col gap-2 text-sm font-medium text-slate-300">
+              <a href="#">Product</a>
+              <a href="#">Pricing</a>
+              <a href="#">Log in</a>
+              <a href="#">Request access</a>
+              <a href="#">Partnerships</a>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <h5 class="font-semibold">About us</h5>
+            <div class="flex flex-col gap-2 text-sm font-medium text-slate-300">
+              <a href="#">About Glovo</a>
+              <a href="#">Contact us</a>
+              <a href="#">Features</a>
+              <a href="#">Careers</a>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <h5 class="font-semibold">Resources</h5>
+            <div class="flex flex-col gap-2 text-sm font-medium text-slate-300">
+              <a href="#">Help center</a>
+              <a href="#">Book a demo</a>
+              <a href="#">Server status</a>
+              <a href="#">Blog</a>
+            </div>
+          </div>
+          <div class="space-y-3">
+            <h5 class="font-semibold">Get in touch</h5>
+            <div class="flex flex-col gap-2 text-sm font-medium text-slate-300">
+              <p>Questions or feedback? We'd love to hear from you</p>
+              <div class="flex items-center gap-3 mt-8">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="size-6 fill-slate-300"
+                >
+                  <path
+                    d="M512 256C512 114.6 397.4 0 256 0S0 114.6 0 256C0 376 82.7 476.8 194.2 504.5V334.2H141.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H287V510.1C413.8 494.8 512 386.9 512 256h0z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                  class="size-6 fill-slate-300"
+                >
+                  <path
+                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z"
+                  />
+                </svg>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 512 512"
+                  class="size-6 fill-slate-300"
+                >
+                  <path
+                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="src/js/script.js"></script>
+  </body>
+</html>

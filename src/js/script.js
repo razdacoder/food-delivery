@@ -13,4 +13,12 @@ $(document).ready(function () {
       $navbar.fadeOut(); // Hide the navbar with fade-out effect
     }
   });
+
+  $(".accordion-trigger").click(function () {
+    // Collapse all other accordion contents
+    $(".accordion-content").slideUp();
+
+    // Toggle the clicked accordion content
+    $(this).next(".accordion-content").slideToggle();
+  });
 });
