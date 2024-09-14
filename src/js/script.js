@@ -3,7 +3,7 @@ $(document).ready(function () {
   var $content = $("#hero");
 
   // Get the position of the content section
-  var contentOffsetTop = $content.offset().bottom;
+  var contentOffsetTop = $content.offset().top;
 
   // Check scroll event
   $(window).scroll(function () {
